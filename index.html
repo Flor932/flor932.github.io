@@ -8,7 +8,12 @@
 
     <!-- Tipografía desde Google Fonts -->
 <!-- Adobe Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/uko8ksj.css">
+   <!-- Tipografías -->
+    <link rel="stylesheet" href="https://use.typekit.net/uko8ksj.css"> <!-- FatFrank Heavy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
 
     <!-- Framework CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -25,7 +30,10 @@
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <!-- Logo o nombre del sitio -->
-    <a class="navbar-brand" href="#">PequePlan</a>
+    <a class="navbar-brand" href="#">
+  <img src="img/logo-pequeplan.svg.svg" alt="PequePlan" height="30">
+</a>
+
     <!-- Botón para mostrar menú en mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -43,145 +51,177 @@
 </nav>
 <!-- /NAVBAR -->
 
-<!-- HERO: Sección de portada con llamado a la acción -->
-<section class="section-spacing container d-flex align-items-center justify-content-between" style="min-height: 100vh; padding-top: 100px;">
+<<!-- HERO: Sección de portada con llamado a la acción -->
+<section class="hero-section container d-flex align-items-center justify-content-between" style="min-height: 100vh;">
   <div class="row align-items-center">
-    <!-- Texto principal -->
     <div class="col-lg-6">
-      <h1 class="h1-custom">Aprende Jugando</h1>
-      <p class="p-custom">PequePlan es una caja sorpresa quincenal con actividades diseñadas para transformar sus tardes en aventuras en familia.</p>
+      <h1 class="hero-title">
+        <span class="azul">Aprendé</span><br>
+        <span class="verde">jugando</span>
+      </h1>
+      <p class="p-custom"><strong>PequePlan</strong> es una caja sorpresa quincenal con actividades diseñadas para transformar sus tardes en aventuras en familia.</p>
       <div class="d-flex gap-3 mt-4">
         <a href="#" class="btn btn-dark">Saber más</a>
       </div>
     </div>
-    <!-- Imagen destacada -->
     <div class="col-lg-6 text-center">
       <img src="img/hero1.png" class="img-fluid img-rounded" alt="Imagen Hero">
     </div>
   </div>
 </section>
+
 <!-- /HERO -->
 
-<!-- ABOUT: Sección sobre nosotros -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Sección Sobre Nosotros</h2>
-  <p class="mt-3 mb-5">Contá quién sos, qué hacés y por qué debería interesarle al visitante.</p>
-  <div class="row">
-    <!-- Tres columnas informativas -->
-    <div class="col-md-4">
-      <h4 class="h4-custom">Experiencia</h4>
-      <p class="p-custom">Un detalle de tu trayectoria o historia.</p>
-    </div>
-    <div class="col-md-4">
-      <h4 class="h4-custom">Valores</h4>
-      <p class="p-custom">¿Qué principios guían tu trabajo?</p>
-    </div>
-    <div class="col-md-4">
-      <h4 class="h4-custom">Compromiso</h4>
-      <p class="p-custom">Cómo asegurás la calidad en lo que ofrecés.</p>
-    </div>
-  </div>
-</section>
-<!-- /ABOUT -->
 
-<!-- SECCIÓN A: Texto centrado sin imagen -->
-<section class="section-spacing container text-center">
-  <h2 class="display-5" class="h2-custom">Título destacado</h2>
-  <p class="lead-custom">Un texto breve para explicar o presentar algo importante.</p>
-  <div class="mt-4 d-flex justify-content-center gap-3">
-    <a href="#" class="btn btn-primary">Acción principal</a>
-    <a href="#" class="btn btn-outline-primary">Acción secundaria</a>
+
+<div class="wave-separator">
+  <img src="img/ondacelestehero.svg" alt="Separador de onda" class="img-fluid w-100">
+</div>
+
+<!-- Sección de logos -->
+<section class="section-spacing container-fluid bg-white">
+  <div class="container text-center">
+    <div class="row justify-content-center align-items-center g-4">
+      <div class="col-6 col-sm-4 col-md-2">
+        <img src="img/Logos/epicgardening.svg" alt="Skycolor" class="img-fluid grayscale-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <img src="img/logos/exquisita.svg" alt="Stadler" class="img-fluid grayscale-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <img src="img/logos/Skycolor.svg" alt="Exquisita" class="img-fluid grayscale-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <img src="img/logos/stadler.svg" alt="Epic Gardening" class="img-fluid grayscale-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <img src="img/logos/steam org.svg" alt="STEM Accredited" class="img-fluid grayscale-logo">
+      </div>
+    </div>
   </div>
 </section>
+
+
 
 <!-- SECCIÓN B: Imagen izquierda, texto derecha -->
-<section class="section-spacing container">
-  <div class="row align-items-center">
-    <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="img/Caja1.jpg" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-    </div>
-    <!-- Columna de texto -->
-    <div class="col-lg-6">
-      <h2 class="display-5" class="h2-custom">¿Qué es PequePlan?</h2>
-      <p class="lead-custom">PequePlan es una caja sorpresa quincenal con actividades diseñadas para transformar sus tardes en aventuras en familia. Recetas fáciles 
-para cocinar juntos, Experimentos divertidos, Materiales seguros, Actividades creativas. </p>
-      <a href="#" class="btn btn-primary mt-3">Saber más</a>
+<section class="section-spacing bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Imagen -->
+      <div class="col-lg-6 text-center mb-4 mb-lg-0">
+        <img src="img/Caja1.jpg" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+      </div>
+      <!-- Texto -->
+      <div class="col-lg-6">
+        <h2 class="display-5 h2-custom text-orange">¿Qué es PequePlan?</h2>
+        <p class="lead-custom"><strong>PequePlan</strong> es una caja sorpresa quincenal con actividades diseñadas para transformar sus tardes en aventuras en familia. Recetas fáciles 
+        para cocinar juntos, Experimentos divertidos, Materiales seguros, Actividades creativas. </p>
+        <a href="#" class="btn btn-primary mt-3">Saber más</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SECCIÓN E:como funciona (Bootstrap Icons) -->
-<section class="section-spacing container text-center py-5">
-  <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">¿Como funciona?</h2>
-  <div class="row">
-    <!-- Beneficio 1 -->
-    <div class="col-md-4 mb-4">
-      <img src="img/plan.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-      <h5>Elegi tu Plan</h5>
-      <p class="p-custom">Vos decidís cuántas actividades querés por quincena.</p>
-    </div>
-    <!-- Beneficio 2 -->
-    <div class="col-md-4 mb-4">
-      <img src="img/Caja.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-      <h5>Recibí tu Peque Plan</h5>
-      <p class="p-custom">Cada 15 días llega a tu casa una caja lista para usar.</p>
-    </div>
-    <!-- Beneficio 3 -->
-    <div class="col-md-4 mb-4">
-      <img src="img/pincel.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-      <h5>Jugá, creá y compartí</h5>
-      <p class="p-custom">Disfruten el momento juntos en familia.</p>
+<div class="wave-separator">
+  <img src="img/ondaverdearriba1.svg" alt="Separador de onda" class="img-fluid w-100">
+</div>
+
+<!-- SECCIÓN E:como funciona -->
+<section class="bg-green-wave py-5 text-center">
+  <div class="container">
+    <div class="card card-funciona p-5">
+      <h2 class="mb-5 text-uppercase fw-bold h2-custom">¿Cómo funciona?</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img src="img/plan.png" class="img-fluid img-icon-funciona" alt="Imagen ilustrativa">
+          <h5>Elegí tu Plan</h5>
+          <p class="p-custom">Vos decidís cuántas actividades querés por quincena.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="img/Caja.png" class="img-fluid img-icon-funciona" alt="Imagen ilustrativa">
+          <h5>Recibí tu Peque Plan</h5>
+          <p class="p-custom">Cada 15 días llega a tu casa una caja lista para usar.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="img/pincel.png" class="img-fluid img-icon-funciona" alt="Imagen ilustrativa">
+          <h5>Jugá, creá y compartí</h5>
+          <p class="p-custom">Disfruten el momento juntos en familia.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<div class="wave-separator">
+  <img src="img/ondaverdeabajo.svg" alt="Separador de onda" class="img-fluid w-100">
+</div>
 
 <!-- PRICING: Tabla de precios o planes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Planes o Precios</h2>
-  <p class="p-custom">Comparación de planes.</p>
-  <div class="row mt-5">
-    <!-- Cada columna es un plan -->
+<section class="section-spacing pricing-fix container text-center">
+  <h2 class="h2-custom mb-2"><span class="text-orange">Tu familia, tu ritmo.</span></h2>
+  <p class="lead">Elegí tu Peque Plan.</p>
+
+  <div class="row mt-5 gy-4">
+    <!-- Plan Básico -->
     <div class="col-md-4">
-      <div class="card p-4 h-100">
-              <img src="img/CAJA VERDE 1.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-        <h5>Plan Básico</h5>
-        <p class="display-6">$100</p>
-        <ul class="list-unstyled">
-          <li>✔ Servicio básico 1</li>
-          <li>✔ Servicio básico 2</li>
+      <div class="plan-card plan-verde">
+        <img src="img/CAJA VERDE 1.png" alt="Caja verde" class="plan-img-outside">
+        <h5 class="plan-title">Plan Básico</h5>
+        <h3 class="plan-name">Peque Chispa</h3>
+        <p class="plan-desc">Perfecto para comenzar a explorar</p>
+        <ul class="plan-list">
+          <li>✔ 1 Kit quincenal con <b>materiales seguros</b></li>
+          <li>✔ Actividad creativa</li>
+          <li>✔ Guía paso a paso ilustrada</li>
+          <li>✔ Tips de juego para padres</li>
         </ul>
-        <a href="#" class="btn btn-outline-dark mt-3">Elegir</a>
+        <p class="plan-price">ARS 10.000</p>
+        <a href="#" class="plan-btn btn-verde">Elegir este plan</a>
       </div>
     </div>
-    <!-- Cada columna es un plan -->
+
+    <!-- Plan Estándar -->
     <div class="col-md-4">
-          <div class="card p-4 h-100">
-                  <img src="img/CAJA AZUL 1.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-            <h5>Plan Básico</h5>
-            <p class="display-6">$100</p>
-            <ul class="list-unstyled">
-              <li>✔ Servicio básico 1</li>
-              <li>✔ Servicio básico 2</li>
-            </ul>
-            <a href="#" class="btn btn-outline-dark mt-3">Elegir</a>
-          </div>
-    </div>
-    <!-- Cada columna es un plan -->
-     <div class="col-md-4">
-      <div class="card p-4 h-100">
-              <img src="img/CAJA NARANJA 1.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-        <h5>Plan Básico</h5>
-        <p class="display-6">$100</p>
-        <ul class="list-unstyled">
-          <li>✔ Servicio básico 1</li>
-          <li>✔ Servicio básico 2</li>
+      <div class="plan-card plan-azul popular">
+        <img src="img/CAJA AZUL 1.png" alt="Caja azul" class="plan-img-outside">
+        <h5 class="plan-title">Plan Estándar</h5>
+        <h3 class="plan-name">Peque Creador</h3>
+        <p class="plan-desc">Una dosis quincenal de creatividad</p>
+        <ul class="plan-list">
+          <li>✔ 1 kit quincenal completo</li>
+          <li>✔ Materiales + receta/experimento</li>
+          <li>✔ Guía ilustrada para jugar</li>
+          <li>✔ Acceso a micro-videos con ideas extra</li>
+          <li>✔ <b>Beneficio PequeSwap</b>: cambia kits usados</li>
+          <li>✔ 10% de descuento en librerías y jugueterías</li>
         </ul>
-        <a href="#" class="btn btn-outline-dark mt-3">Elegir</a>
+        <p class="plan-price">ARS 15.000</p>
+        <a href="#" class="plan-btn btn-azul">Este es para nosotros</a>
+        <span class="popular-badge">Más popular ⭐</span>
+      </div>
+    </div>
+
+    <!-- Plan Premium -->
+    <div class="col-md-4">
+      <div class="plan-card plan-naranja">
+        <img src="img/CAJA NARANJA 1.png" alt="Caja naranja" class="plan-img-outside">
+        <h5 class="plan-title">Plan Premium</h5>
+        <h3 class="plan-name">Peque Explorador</h3>
+        <p class="plan-desc">Creatividad sin límites + sorpresas</p>
+        <ul class="plan-list">
+          <li>✔ <b>Incluye todo lo del Plan Estándar</b>, más:</li>
+          <li>✔ 2 Kits quincenales (¡el doble de actividades!)</li>
+          <li>✔ Regalo sorpresa cada mes</li>
+          <li>✔ Actividades bonus descargables</li>
+          <li>✔ Seguimiento personalizado según edad</li>
+        </ul>
+        <p class="plan-price">ARS 20.000</p>
+        <a href="#" class="plan-btn btn-naranja">Quiero el premium</a>
       </div>
     </div>
   </div>
 </section>
+
 <!-- /PRICING -->
 
 <!-- SECCIÓN B: Imagen izquierda, texto derecha -->
@@ -189,9 +229,10 @@ para cocinar juntos, Experimentos divertidos, Materiales seguros, Actividades cr
   <div class="row align-items-center">
    <!-- Columna de texto -->
     <div class="col-lg-6">
-      <h2 class="display-5" class="h2-custom">Beneficio PequeSwap
-Lo que ya jugaron… 
-se transforma en más juego</h2>
+      <h2 class="display-5 h2-custom">
+        <span class="text-orange">Beneficio PequeSwap</span><br>
+        <span class="text-blue">Lo que ya jugaron…<br>se transforma en más juego</span>
+      </h2>
       <p class="lead-custom">PequePlan es una caja sorpresa quincenal con actividades diseñadas para transformar sus tardes en aventuras en familia. Recetas fáciles 
 para cocinar juntos, Experimentos divertidos, Materiales seguros, Actividades creativas. </p>
       <a href="#" class="btn btn-primary mt-3">Saber más</a>
@@ -207,42 +248,32 @@ para cocinar juntos, Experimentos divertidos, Materiales seguros, Actividades cr
 
 
 <!-- TEAM: Presentación del equipo -->
+<!-- TEAM: Presentación del equipo -->
 <section class="section-spacing container text-center">
   <h2 class="h2-custom">¿Por qué necesitas un Peque Plan?</h2>
-  <p class="p-custom">Personas clave detrás del proyecto.</p>
-  <div class="row mt-5">
-    <!-- Cada columna es un integrante -->
-    <div class="col-md-4 mb-4">
-      <img src="img/hojaplanta1.png" class="rounded-circle mb-3" alt="Miembro 1">
-      <p class="p-custom">Más conexión
-        menos pantallas
-      </p>
+  <div class="row justify-content-center mt-5">
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <img src="img/hojaplanta1.png" class="rounded-circle team-icon mb-3" alt="Más conexión">
+      <p class="p-custom">Más conexión<br>menos pantallas</p>
     </div>
-    <!-- Cada columna es un integrante -->
-    <div class="col-md-4 mb-4">
-      <img src="img/cerebro2.png" class="rounded-circle mb-3" alt="Miembro 1">
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <img src="img/cerebro2.png" class="rounded-circle team-icon mb-3" alt="Creatividad">
       <p class="p-custom">Estimula la creatividad</p>
     </div>
-    <!-- Cada columna es un integrante -->
-    <div class="col-md-4 mb-4">
-      <img src="img/palma3.png" class="rounded-circle mb-3" alt="Miembro 1">
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <img src="img/palma3.png" class="rounded-circle team-icon mb-3" alt="Familia">
       <p class="p-custom">Momentos en familia</p>
     </div>
-
-     <!-- Cada columna es un integrante -->
-    <div class="col-md-4 mb-4">
-      <img src="img/paleta4.png" class="rounded-circle mb-3" alt="Miembro 1">
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <img src="img/paleta4.png" class="rounded-circle team-icon mb-3" alt="Materiales">
       <p class="p-custom">Materiales seguros</p>
     </div>
-
-     <!-- Cada columna es un integrante -->
-    <div class="col-md-4 mb-4">
-      <img src="img/caja 5.png" class="rounded-circle mb-3" alt="Miembro 1">
-      <p class="p-custom">Listo para ¡abrir y jugar!</p>
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <img src="img/caja 5.png" class="rounded-circle team-icon mb-3" alt="Caja">
+      <p class="p-custom">¡Abrir y jugar!</p>
     </div>
   </div>
 </section>
-<!-- /TEAM -->
 
 <!-- SECCIÓN B: Imagen izquierda, texto derecha -->
 <section class="section-spacing container">
@@ -326,3 +357,37 @@ window.addEventListener('scroll', function() {
 <script src="scripts.js"></script>
 </body>
 </html>
+
+
+
+<!-- ABOUT: Sección sobre nosotros -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">Sección Sobre Nosotros</h2>
+  <p class="mt-3 mb-5">Contá quién sos, qué hacés y por qué debería interesarle al visitante.</p>
+  <div class="row">
+    <!-- Tres columnas informativas -->
+    <div class="col-md-4">
+      <h4 class="h4-custom">Experiencia</h4>
+      <p class="p-custom">Un detalle de tu trayectoria o historia.</p>
+    </div>
+    <div class="col-md-4">
+      <h4 class="h4-custom">Valores</h4>
+      <p class="p-custom">¿Qué principios guían tu trabajo?</p>
+    </div>
+    <div class="col-md-4">
+      <h4 class="h4-custom">Compromiso</h4>
+      <p class="p-custom">Cómo asegurás la calidad en lo que ofrecés.</p>
+    </div>
+  </div>
+</section>
+<!-- /ABOUT -->
+
+<!-- SECCIÓN A: Texto centrado sin imagen -->
+<section class="section-spacing container text-center">
+  <h2 class="display-5" class="h2-custom">Título destacado</h2>
+  <p class="lead-custom">Un texto breve para explicar o presentar algo importante.</p>
+  <div class="mt-4 d-flex justify-content-center gap-3">
+    <a href="#" class="btn btn-primary">Acción principal</a>
+    <a href="#" class="btn btn-outline-primary">Acción secundaria</a>
+  </div>
+</section>
