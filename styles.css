@@ -11,11 +11,25 @@
 body {
   font-family: var(--font-family-base);
   color: #212529;
-  background-color: #ffffff;
+  background-color: #fff9ef;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
+
+/* Tipografía base: para párrafos y textos generales */
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Títulos con FatFrank */
+.h1-custom,
+.h2-custom,
+.h3-custom,
+.h4-custom {
+  font-family: 'FatFrank Heavy', sans-serif;
+}
+
 
 /* 3. NAVBAR */
 .navbar {
@@ -44,14 +58,21 @@ body {
 
 .nav-link:hover {
   color: var(--primary-color);
+  
 }
 
 /* 4. HERO */
+.hero-section {
+  padding-bottom: 0 !important;
+}
+
 .row.p-5 {
+
   min-height: 90vh;
   display: flex;
   align-items: center;
   padding-top: 100px;
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,6 +90,20 @@ p {
   font-size: 1rem;
   color: #6c757d;
 }
+
+.wave-separator {
+  line-height: 0;
+  overflow: hidden;
+  margin-bottom: -2px; /* para pegarlo mejor a la próxima sección */
+}
+
+.wave-separator img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
 
 /* Botones */
 .btn {
@@ -183,7 +218,7 @@ footer {
 
 /* 10. IMÁGENES */
 img.rounded-circle {
-  border: 5px solid var(--light-color);
+  border: 0px solid var(--light-color);
 }
 
 /* 11. GALERÍA */
@@ -323,4 +358,323 @@ img.rounded-circle {
   .masonry__container {
     column-count: 1;
   }
+}
+.azul {
+  color: #3398ED; /* Celeste pastel */
+  font-weight: 700;
+}
+
+.verde {
+  color: #95C11F; /* Verde vibrante */
+  font-weight: 700;
+}
+
+.wave-separator {
+  margin-top: -5px;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-family: 'FatFrank Heavy', sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+
+.brand-logos {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.grayscale-logo {
+  max-height: 60px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.grayscale-logo:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+
+.bg-green-wave {
+  background-color: #d1e18f;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.img-icon-funciona {
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.card-funciona {
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
+  padding: 60px 40px;
+}
+
+.text-orange {
+  color: #ff5c1b;
+}
+
+.text-orange {
+  color: #ff5c1b;
+}
+
+.text-blue {
+  color: #3398ED;
+}
+
+.team-icon {
+  max-width: 150px;
+  height: auto;
+}
+
+.plan-card {
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  overflow: visible;
+  margin-top: 80px;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagen fuera de la card */
+.plan-img-outside {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 130px;
+  z-index: 1;
+}
+
+/* Títulos y textos */
+.plan-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-top: 50px; /* espacio por la caja */
+  margin-bottom: 0;
+}
+
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.plan-desc {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Lista de características */
+.plan-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.plan-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Precios y botones */
+.plan-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.plan-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Colores personalizados */
+.btn-verde {
+  background-color: #83C300;
+}
+
+.btn-azul {
+  background-color: #007DE4;
+}
+
+.btn-naranja {
+  background-color: #FA742B;
+}
+
+.plan-verde {
+  border-top: 6px solid #83C300;
+}
+
+.plan-azul {
+  border-top: 6px solid #007DE4;
+}
+
+.plan-naranja {
+  border-top: 6px solid #FA742B;
+}
+
+.popular {
+  position: relative;
+}
+
+.popular-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.85rem;
+  background: rgb(255, 255, 255);
+  color: #000;
+  padding: 0.3rem 0.6rem;
+  border-radius: 10px;
+}
+
+.text-orange {
+  color: #FA742B;
+}
+
+}.plan-verde {
+  background-color: #83c300; /* Fondo completo verde claro */
+}
+
+.plan-azul {
+  background-color: #007DE4; /* Fondo completo azul claro */
+}
+
+.plan-naranja {
+  background-color: #FA742B; /* Fondo completo naranja claro */
+}
+
+/* Subir la imagen de la caja (más hacia afuera) */
+.plan-img-outside {
+  position: absolute;
+  top: -80px; /* antes -60px */
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 130px;
+  z-index: 1;
+}
+
+/* Corregir el fondo de la tarjeta verde (antes no se aplicaba del todo) */
+.plan-verde {
+  background-color: #83c300 !important;
+  color: #333; /* texto oscuro sobre fondo claro */
+}
+
+/* Texto blanco para las tarjetas azul y naranja */
+.plan-azul,
+.plan-naranja {
+  color: #fff;
+}
+
+/* Para mantener contraste en algunas partes (como etiquetas negras o amarillas) */
+.plan-azul .popular-badge {
+  color: #000;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Subtítulo de plan */
+.plan-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+/* Nombre del plan */
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+/* Descripción del plan */
+.plan-desc {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+/* Cambiar color de precio para que se lea sobre fondo */
+.plan-azul .plan-price,
+.plan-naranja .plan-price {
+  color: #ffffff; /* dorado */
+}
+
+/* Asegurar contraste en las listas */
+.plan-azul .plan-list li,
+.plan-naranja .plan-list li {
+  color: #fff;
+}
+
+/* Sombra suave en todas las tarjetas */
+.plan-card {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.plan-verde {
+  background-color: #83C300 !important; /* fondo verde fuerte */
+  color: #fff !important; /* texto blanco en toda la tarjeta */
+}
+
+.plan-verde .plan-title,
+.plan-verde .plan-name,
+.plan-verde .plan-desc,
+.plan-verde .plan-list li,
+.plan-verde .plan-price,
+.plan-verde .plan-btn {
+  color: #fff !important;
+}
+
+.plan-name {
+  font-family: 'FatFrankHeavy', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+
+.plan-verde,
+.plan-azul,
+.plan-naranja {
+  text-align: left;
+}
+
+.plan-img-outside {
+  position: absolute;
+  top: -300px; /* más arriba */
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 300px; /* más grande */
+  z-index: 10; /* encima de todo */
+}
+
+.section-spacing.pricing-fix {
+  padding-top: 250px; /* más alto que el resto */
 }
