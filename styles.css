@@ -50,11 +50,16 @@ body {
 }
 
 .nav-link {
-  color: var(--dark-color);
+  color: #629EBA;
   font-weight: 500;
   margin-left: 20px;
   transition: color 0.3s;
 }
+
+.nav-link.active {
+  color:#ff5c1b; /* o el color que quieras */
+}
+
 
 .nav-link:hover {
   color: var(--primary-color);
@@ -143,14 +148,6 @@ section h2 {
   position: relative;
 }
 
-section h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--primary-color);
-  margin: 20px auto 0;
-}
 
 /* 6. CARDS */
 .card {
@@ -377,7 +374,7 @@ img.rounded-circle {
 
 .hero-title {
   font-family: 'FatFrank Heavy', sans-serif;
-  font-size: 6rem;
+  font-size: 5.5rem;
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 20px;
@@ -440,241 +437,364 @@ img.rounded-circle {
   height: auto;
 }
 
-.plan-card {
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.plan-verde {
+  background-color: #a4c520;
+  color: #ffffff;
+}
+
+.plan-azul {
+  background-color: #4d9edd;
+  color: #ffffff;
+}
+
+.plan-naranja {
+  background-color: #ffe6d3;
+  color: #c65000;
+  border: 2px solid #ff5c1b;
+}
+
+/* Heredar color en textos internos */
+.plan-verde h5, .plan-verde p,
+.plan-azul h5, .plan-azul p,
+.plan-naranja h5, .plan-naranja p {
+  color: white;
+}
+
+/* TESTIMONIOS Contenedor de las tarjetas en cuadrícula 4x2 */ 
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Flip Card */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* proporción cuadrada */
+  max-width: 250px;
+  perspective: 1000px;
+}
+
+/* Interior de la tarjeta */
+.flip-card-inner {
   position: relative;
-  background-color: #fff;
-  transition: transform 0.3s ease;
-  overflow: visible;
-  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-.plan-card:hover {
-  transform: translateY(-5px);
+/* Flip al hacer hover */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-/* Imagen fuera de la card */
-.plan-img-outside {
+/* Caras */
+.flip-card-front,
+.flip-card-back {
   position: absolute;
-  top: -60px;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 130px;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-/* Títulos y textos */
-.plan-title {
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: #ffffff;
-  margin-top: 50px; /* espacio por la caja */
-  margin-bottom: 0;
+.flip-card-front {
+  background-color: #bbb;
 }
 
-.plan-name {
-  font-size: 1.5rem;
-  font-weight: 900;
-  margin-bottom: 0.5rem;
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.plan-desc {
-  font-size: 1rem;
-  color: #ffffff;
-  margin-bottom: 1rem;
+/* Parte trasera */
+.flip-card-back {
+  transform: rotateY(180deg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: white !important;
 }
 
-/* Lista de características */
-.plan-list {
+.flip-card-back * {
+  color: white !important;
+}
+
+
+/* Colores personalizados: no tocan el color del texto */
+.color1 .flip-card-back {
+  background-color: #F89337;
+}
+
+.color2 .flip-card-back {
+  background-color: #4D9EDD;
+}
+
+.color3 .flip-card-back {
+  background-color: #A4C520;
+}
+
+
+.fatfrank-text {
+  font-family: 'FatFrank Heavy', sans-serif;
+}
+
+/* LO DEMAS*/
+
+.faq-container {
+  color; #F89337; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 24px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Quicksand';
+}
+
+.faq-btn {
+  width: 100%;
+  background: #F89337;
+  color: white;
+  font-family: 'Quicksand';
+  font-weight: 500;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 25px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: normal;
+}
+
+.input-email {
+  width: 40%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-family: 'Quicksand';
+}
+
+.footer-list {
   list-style: none;
   padding: 0;
-  text-align: left;
-  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.6;
 }
 
-.plan-list li {
-  margin-bottom: 0.5rem;
+.footer-list li {
+  margin-bottom: 4px;
 }
 
-/* Precios y botones */
-.plan-price {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.social-icons {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
 }
 
-.plan-btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 30px;
-  font-weight: bold;
+/* Asegúrate de tener FontAwesome cargado si usas <i class="fab ..."> para los íconos */
+
+/*color select NAVAR*/
+
+.navbar .nav-link.active {
+  color: #ff5c1b !important;
+}
+
+
+/*Botones naranjas todos*/
+.btn {
+  background-color: #FF5C1B;
   color: white;
-  text-decoration: none;
-  font-size: 0.9rem;
+  border: 2px solid #FF5C1B;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Colores personalizados */
-.btn-verde {
-  background-color: #83C300;
+.btn:hover {
+  background-color: white;
+  color: #FF5C1B;
+  border: 2px solid #FF5C1B;
 }
 
-.btn-azul {
-  background-color: #007DE4;
+/*Fondo testimonios*/
+
+.bg-testimonios {
+  background-color: #FFF4B9;
+  padding: 100px 0; /* mantiene el espaciado vertical */
 }
 
-.btn-naranja {
-  background-color: #FA742B;
+.bg-testimonios h2 {
+  color: #FF5C1B; /* naranja fuerte */
 }
 
-.plan-verde {
-  border-top: 6px solid #83C300;
-}
 
-.plan-azul {
-  border-top: 6px solid #007DE4;
-}
 
-.plan-naranja {
-  border-top: 6px solid #FA742B;
-}
 
-.popular {
-  position: relative;
-}
+/* PAGINA DETALLE*/
 
-.popular-badge {
-  position: absolute;
-  bottom: 10px;
-  right: 15px;
-  font-size: 0.85rem;
-  background: rgb(255, 255, 255);
-  color: #000;
-  padding: 0.3rem 0.6rem;
-  border-radius: 10px;
-}
-
-.text-orange {
-  color: #FA742B;
-}
-
-}.plan-verde {
-  background-color: #83c300; /* Fondo completo verde claro */
-}
-
-.plan-azul {
-  background-color: #007DE4; /* Fondo completo azul claro */
-}
-
-.plan-naranja {
-  background-color: #FA742B; /* Fondo completo naranja claro */
-}
-
-/* Subir la imagen de la caja (más hacia afuera) */
-.plan-img-outside {
-  position: absolute;
-  top: -80px; /* antes -60px */
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 130px;
-  z-index: 1;
-}
-
-/* Corregir el fondo de la tarjeta verde (antes no se aplicaba del todo) */
-.plan-verde {
-  background-color: #83c300 !important;
-  color: #333; /* texto oscuro sobre fondo claro */
-}
-
-/* Texto blanco para las tarjetas azul y naranja */
-.plan-azul,
-.plan-naranja {
-  color: #fff;
-}
-
-/* Para mantener contraste en algunas partes (como etiquetas negras o amarillas) */
-.plan-azul .popular-badge {
-  color: #000;
-  background-color: rgb(255, 255, 255);
-}
-
-/* Subtítulo de plan */
-.plan-title {
-  font-weight: bold;
-  font-size: 1.1rem;
-  opacity: 0.85;
-}
-
-/* Nombre del plan */
-.plan-name {
-  font-size: 1.5rem;
-  font-weight: 900;
-  margin-bottom: 0.5rem;
-}
-
-/* Descripción del plan */
-.plan-desc {
-  font-size: 1rem;
-  opacity: 0.9;
-  margin-bottom: 1rem;
-}
-
-/* Cambiar color de precio para que se lea sobre fondo */
-.plan-azul .plan-price,
-.plan-naranja .plan-price {
-  color: #ffffff; /* dorado */
-}
-
-/* Asegurar contraste en las listas */
-.plan-azul .plan-list li,
-.plan-naranja .plan-list li {
-  color: #fff;
-}
-
-/* Sombra suave en todas las tarjetas */
+/* Contenedor de la card */
 .plan-card {
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
 }
 
-.plan-verde {
-  background-color: #83C300 !important; /* fondo verde fuerte */
-  color: #fff !important; /* texto blanco en toda la tarjeta */
+/* Columna izquierda con la info */
+.plan-info {
+  flex: 1 1 400px;
+  background-color: #a7d92f;
+  color: white;
+  border-radius: 30px;
+  padding: 2rem 2.5rem;
+  font-family: 'Quicksand', sans-serif;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-.plan-verde .plan-title,
-.plan-verde .plan-name,
-.plan-verde .plan-desc,
-.plan-verde .plan-list li,
-.plan-verde .plan-price,
-.plan-verde .plan-btn {
-  color: #fff !important;
+.plan-info h3 {
+  font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  color: white;
 }
 
-.plan-name {
-  font-family: 'FatFrankHeavy', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  letter-spacing: -0.5px;
+.plan-info h2 {
+  font-family: 'FatFrank Heavy', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: white;
 }
 
-
-.plan-verde,
-.plan-azul,
-.plan-naranja {
-  text-align: left;
+.plan-info .subtitulo {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.plan-img-outside {
-  position: absolute;
-  top: -300px; /* más arriba */
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 300px; /* más grande */
-  z-index: 10; /* encima de todo */
+.caracteristicas {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  color: white;
 }
 
-.section-spacing.pricing-fix {
-  padding-top: 250px; /* más alto que el resto */
+.caracteristicas li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.caracteristicas i {
+  color: white;
+  margin-right: 0.5rem;
+}
+
+/* Precio */
+.precio {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+/* Botón */
+.boton-plan {
+  background-color: #ff4d00;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.boton-plan:hover {
+  background-color: #e54400;
+}
+
+/* Columna derecha con la imagen */
+.plan-img {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.plan-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fondo-ondas {
+  background: url('img/Ondas-hero-detalle.svg') no-repeat top center;
+  background-size: cover;
+  background-position: top 120px center; /* Aumenta el "80px" para bajarlo más */
+  background-color: #fff6e8;
+  padding: 8rem 2rem 4rem;
+  width: 100%;
+}
+
+/*TARJETA AZUL DE ABAJO*/
+
+/* Sección general */
+.beneficios-plan {
+  background-color: #fff6e8;
+}
+
+/* Caja azul única que contiene todo */
+.caja-beneficio-unica {
+  background-color: #289ce0;
+  border-radius: 30px;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Ítems internos */
+.beneficio-item {
+  flex: 1 1 250px;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.beneficio-item h5 {
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.beneficio-item p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Íconos */
+.icono-beneficio {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.caja-beneficio-unica,
+.caja-beneficio-unica h5,
+.caja-beneficio-unica p {
+  color: white !important;
 }
