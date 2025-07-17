@@ -51,18 +51,19 @@
 <section class="fondo-ondas">
   <div class="plan-card">
     <div class="plan-info">
-      <h3>| Plan Básico</h3>
-      <h2>Peque Chispa</h2>
-      <p class="subtitulo">Perfecto para comenzar a explorar</p>
-
-      <ul class="caracteristicas">
-        <li><i class="fas fa-check-circle"></i> 1 Kit quincenal con <strong>materiales seguros</strong></li>
-        <li><i class="fas fa-check-circle"></i> Actividad creativa</li>
-        <li><i class="fas fa-check-circle"></i> Guía paso a paso ilustrada</li>
-        <li><i class="fas fa-check-circle"></i> Tips de juego para padres</li>
+      <h5 style="margin-bottom: 0.5rem;">Plan Básico</h5>
+      <h2 class="fatfrank-text" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white;">Peque Chispa</h2>
+      <div style="font-size: 0.9rem; border-left: 3px solid white; padding-left: 10px; margin-bottom: 1rem;">
+        Perfecto para comenzar a explorar
+      </div>
+      <ul class="list-unstyled" style="font-size: 0.85rem; padding-left: 0;">
+        <li><img src="img/iconos/Check.svg" style="width: 16px; margin-right: 6px;">1 kit quincenal con materiales seguros</li>
+        <li><img src="img/iconos/Check.svg" style="width: 16px; margin-right: 6px;">Actividad Creativa</li>
+        <li><img src="img/iconos/Check.svg" style="width: 16px; margin-right: 6px;">Guía ilustrada para jugar</li>
+        <li><img src="img/iconos/Check.svg" style="width: 16px; margin-right: 6px;">Tips de juego para padres</li>
       </ul>
 
-      <p class="precio">ARS 10.000</p>
+      <p class="fatfrank-text mt-3 mb-2" style="font-size: 1.6rem; color: #ffffff;">ARS 10.000</p>
       <a href="#" class="boton-plan">Elegir este plan</a>
     </div>
 
@@ -73,37 +74,60 @@
 </section>
 
 
+<div class="wave-separator">
+  <img src="img/Bordes/onda-celeste-hero-detalle.svg" alt="Separador de onda" class="img-fluid w-100">
+</div>
+
 <!-- TARJETA AZUL DE ABAJO -->
 
-<!-- Caja única de beneficios -->
-<section class="beneficios-plan py-5">
-  <div class="container">
-    <div class="caja-beneficio-unica d-flex justify-content-between align-items-center flex-wrap text-white text-center px-4 py-4">
-      
-      <!-- Ítem 1 -->
-      <div class="beneficio-item">
-        <i class="bi bi-box icono-beneficio"></i>
-        <h5>Retiralo</h5>
-        <p>Retiralo en tu librería más cercana dentro de las 24hrs</p>
+<section class="container-fluid my-5">
+  <div class="mx-4 mx-md-5 p-4 px-5 rounded-4" style="background-color: #4ca1e0;">
+    <div class="row gx-4 gy-3 justify-content-between align-items-start text-white">
+
+      <!-- RETIRALO -->
+      <div class="col-md-4 d-flex flex-column">
+        <div class="d-flex align-items-start mb-1">
+          <img src="img/iconos/cajita detalle.svg" alt="Retiralo" style="width: 20px; margin-right: 10px; margin-top: 3px;">
+          <div>
+            <span class="fw-bold d-block">Retiralo</span>
+            <p class="mb-0" style="font-size: 0.9rem; color: white;">
+              Retiralo en tu librería más cercana dentro de las 24hrs
+            </p>
+          </div>
+        </div>
       </div>
 
-      <!-- Ítem 2 -->
-      <div class="beneficio-item">
-        <i class="bi bi-lock icono-beneficio"></i>
-        <h5>Pago seguro</h5>
-        <p>Pago seguro, aceptamos todos los medios de pago.</p>
+      <!-- PAGO SEGURO -->
+      <div class="col-md-4 d-flex flex-column">
+        <div class="d-flex align-items-start mb-1">
+          <img src="img/iconos/candado detalle.svg" alt="Pago seguro" style="width: 20px; margin-right: 10px; margin-top: 3px;">
+          <div>
+            <span class="fw-bold d-block">Pago seguro</span>
+            <p class="mb-0" style="font-size: 0.9rem; color: white;">
+              Pago seguro, aceptamos todos los medios de pago.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <!-- Ítem 3 -->
-      <div class="beneficio-item">
-        <i class="bi bi-hand-thumbs-up icono-beneficio"></i>
-        <h5>Cancela cuando quieras</h5>
-        <p>Sin compromiso: cancela en línea en cualquier momento.</p>
+      <!-- CANCELA CUANDO QUIERAS -->
+      <div class="col-md-4 d-flex flex-column">
+        <div class="d-flex align-items-start mb-1">
+          <img src="img/iconos/like detalle.svg" alt="Cancelar" style="width: 20px; margin-right: 10px; margin-top: 3px;">
+          <div>
+            <span class="fw-bold d-block">Cancela cuando quieras</span>
+            <p class="mb-0" style="font-size: 0.9rem; color: white;">
+              Sin compromiso: cancelá en línea en cualquier momento.
+            </p>
+          </div>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
+
+
 
 <!-- TEAM: Presentación del equipo -->
 <section class="section-spacing container text-center">
@@ -220,40 +244,65 @@
 </div>
 
 <!-- PRICING: Tabla de precios o planes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Conoce otros planes</h2>
-  <div class="row mt-5 justify-content-center gap-4">
+<section class="section-spacing container">
+  <h2 class="h2-custom text-center">Elegí tu PequePlan</h2>
+  <div class="row mt-5 justify-content-center">
 
-    <!-- Plan Azul -->
-    <div class="card plan-azul p-4" style="width: 18rem;">
-      <img src="img/Cajas Planes/CAJA AZUL 1.png" class="card-img-top" alt="Caja Azul">
-      <div class="card-body">
-        <h5>Plan Intermedio</h5>
-        <p class="display-6">$15.000</p>
-        <ul class="list-unstyled">
-          <li>✔ Servicio extra 1</li>
-          <li>✔ Servicio extra 2</li>
+    <!-- PLAN AZUL COMPLETO -->
+    <div class="plan-card-uniforme">
+      <img src="img/Cajas Planes/Caja Azul act.png" class="card-img-top pb-3" alt="Caja Azul" style="background-color: rgb(255, 255, 255); border-radius: 10px 10px 0 0;">
+      <div class="card p-4" style="background-color: #4ca1e0; border-radius: 20px; color: white; text-align: left; position: relative;">
+        <h5 style="margin-bottom: 0.5rem;">Plan Estándar</h5>
+        <h2 class="fatfrank-text" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white;">Peque Creador</h2>
+        <div style="font-size: 0.9rem; border-left: 3px solid white; padding-left: 10px; margin-bottom: 1rem;">
+          Una dosis quincenal de creatividad
+        </div>
+        <ul class="list-unstyled" style="font-size: 0.85rem; padding-left: 0;">
+          <li><img src="img/iconos/Check.svg" style="width: 16px; margin-right: 6px;">1 kit quincenal completo</li>
+          <li><img src="img/iconos/Check.svg" style="width: 16px; margin-right: 6px;">Materiales + receta/experimento</li>
+          <li><img src="img/iconos/Check.svg" style="width: 16px; margin-right: 6px;">Guía ilustrada para jugar</li>
+          <li><img src="img/iconos/Check.svg" style="width: 16px; margin-right: 6px;">Acceso a micro-videos con ideas extra</li>
+          <li><img src="img/iconos/Swap.svg" style="width: 16px; margin-right: 6px;"><strong>Beneficio PequeSwap:</strong> cambiá kits usados por nuevos retos</li>
+          <li><img src="img/iconos/Descuento.svg" style="width: 16px; margin-right: 6px;"><strong>10% de descuento</strong> en librerías y jugueterías educativas</li>
         </ul>
-        <a href="#" class="btn btn-primary mt-3">Ver más</a>
+        <p class="fatfrank-text mt-3 mb-2" style="font-size: 1.6rem; color:#ffffff">ARS 15.000</p>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <a href="#" class="btn" style="background-color: #ff5c1b; color: white; font-weight: bold; border-radius: 20px; padding: 8px 16px;">Suscribirme</a>
+          <div style="display: flex; align-items: center;">
+            <img src="img/iconos/Más Popular.svg" alt="Estrella" style="width: 55px; margin-right: 5px;">
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Plan Naranja -->
-    <div class="card plan-naranja p-4" style="width: 18rem;">
-      <img src="img/Cajas Planes/CAJA NARANJA 1.png" class="card-img-top" alt="Caja Naranja">
-      <div class="card-body">
-        <h5>Plan Premium</h5>
-        <p class="display-6">$20.000</p>
-        <ul class="list-unstyled">
-          <li>✔ Servicio premium 1</li>
-          <li>✔ Servicio premium 2</li>
+    <!-- PLAN NARANJA COMPLETO -->
+    <div class="plan-card-uniforme">
+      <img src="img/Cajas Planes/Caja Naranja act.png" class="card-img-top pb-3" alt="Caja Naranja" style="background-color: rgb(255, 255, 255); border-radius: 10px 10px 0 0;">
+      <div class="card p-4" style="background-color: #F89337; border-radius: 20px; color: white; text-align: left; position: relative;">
+        <h5 style="margin-bottom: 0.5rem;">Plan Estándar</h5>
+        <h2 class="fatfrank-text" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white;">Peque Explorador</h2>
+        <div style="font-size: 0.9rem; border-left: 3px solid white; padding-left: 10px; margin-bottom: 1rem;">
+          Creatividad sin límites + sorpresas
+        </div>
+        <ul class="list-unstyled" style="font-size: 0.85rem; padding-left: 0;">
+          <li><img src="img/iconos/Check.svg" style="width: 16px; margin-right: 6px;">2 kits quincenales completos</li>
+          <li><img src="img/iconos/Check.svg" style="width: 16px; margin-right: 6px;">Materiales + receta/experimento</li>
+          <li><img src="img/iconos/Check.svg" style="width: 16px; margin-right: 6px;">Guía ilustrada para jugar</li>
+          <li><img src="img/iconos/Check.svg" style="width: 16px; margin-right: 6px;">Acceso a micro-videos con ideas extra</li>
+          <li><img src="img/iconos/Check.svg" style="width: 16px; margin-right: 6px;"><strong>Regalo sorpresa</strong> cada mes</li>
+          <li><img src="img/iconos/Swap.svg" style="width: 16px; margin-right: 6px;"><strong>Beneficio PequeSwap:</strong> cambiá kits usados por nuevos retos</li>
+          <li><img src="img/iconos/Descuento.svg" style="width: 16px; margin-right: 6px;"><strong>10% de descuento</strong> en librerías y jugueterías educativas</li>
         </ul>
-        <a href="#" class="btn btn-warning mt-3">Ver más</a>
+        <p class="fatfrank-text mt-3 mb-2" style="font-size: 1.6rem; color:#ffffff">ARS 20.000</p>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <a href="#" class="btn" style="background-color: #ff5c1b; color: white; font-weight: bold; border-radius: 20px; padding: 8px 16px;">Suscribirme</a>
+        </div>
       </div>
     </div>
 
   </div>
 </section>
+
 
 <!-- lo demas -->
 <section style="background-color: #ffffff;">

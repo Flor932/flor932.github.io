@@ -1,6 +1,13 @@
 /* Tipografías externas */
-@import url("https://use.typekit.net/uko8ksj.css");
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 /* 1. VARIABLES DE DISEÑO */
@@ -9,7 +16,7 @@
   --secondary-color: #6c757d;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
-  --font-family-base: 'FatFrank Heavy', sans-serif;
+  --font-family-base: 'Archivo Black', sans-serif;
 }
 
 /* 2. ESTILOS GENERALES */
@@ -32,7 +39,7 @@ body {
 .h2-custom,
 .h3-custom,
 .h4-custom {
-  font-family: 'FatFrank Heavy', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
 }
 
 
@@ -101,11 +108,6 @@ p {
   color: #6c757d;
 }
 
-.wave-separator {
-  line-height: 0;
-  overflow: hidden;
-  margin-bottom: -2px; /* para pegarlo mejor a la próxima sección */
-}
 
 .wave-separator img {
   display: block;
@@ -368,13 +370,14 @@ img.rounded-circle {
 }
 
 .wave-separator {
-  margin-top: -5px;
+  margin: 0px;
   line-height: 0;
   overflow: hidden;
+  padding: 0;
 }
 
 .hero-title {
-  font-family: 'FatFrank Heavy', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   font-size: 5.5rem;
   font-weight: 800;
   line-height: 1.1;
@@ -549,7 +552,7 @@ img.rounded-circle {
 
 
 .fatfrank-text {
-  font-family: 'FatFrank Heavy', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
 }
 
 /* LO DEMAS*/
@@ -679,7 +682,7 @@ img.rounded-circle {
 }
 
 .plan-info h2 {
-  font-family: 'FatFrank Heavy', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   font-size: 2.2rem;
   margin-bottom: 1rem;
   color: white;
@@ -824,5 +827,27 @@ img.rounded-circle {
 
 /*titulos de los planes*/
 .fatfrank-text {
-  font-family: 'FatFrank Heavy', sans-serif !important;
+  font-family: 'Archivo Black', sans-serif !important;
 }
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+footer {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+.faq-section {
+  padding-bottom: 3rem; /* o ajustá según necesidad */
+}
+
