@@ -376,13 +376,7 @@ img.rounded-circle {
   padding: 0;
 }
 
-.hero-title {
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 5.5rem;
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 20px;
-}
+
 
 
 .brand-logos {
@@ -955,4 +949,64 @@ footer {
 
 .hero-crema {
   background-color: #fff9ef;
+}
+
+
+/* === FIXES RESPONSIVE HERO === */
+@media (max-width: 768px) {
+  
+
+  .p-custom {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .plan-card-uniforme {
+    width: 100% !important;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* === ONDAS === */
+.wave-separator {
+  width: 100%;
+  overflow: visible;
+  display: block;
+  line-height: 0;
+}
+
+
+/* === HERO TITLE (GLOBAL) === */
+.hero-title {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem !important;
+    text-align: center !important;
+  }
+
+  .p-custom {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .plan-card-uniforme {
+    width: 100% !important;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* === ONDAS === */
+.wave-separator {
+  width: 100%;
+  overflow: visible;
+  display: block;
+  line-height: 0;
 }

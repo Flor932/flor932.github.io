@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<!-- Configuración básica del documento -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Plantilla Visible - Belluccia 3</title>
+<!-- Tipografía desde Google Fonts -->
+<!-- Adobe Fonts -->
+<!-- Tipografías -->
+<link href="https://use.typekit.net/uko8ksj.css" rel="stylesheet"/> <!-- FatFrank Heavy -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<!-- Framework CSS de Bootstrap -->
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" rel="stylesheet"/>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+<!-- Estilos personalizados -->
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;display=swap" rel="stylesheet"/></head>
+<body>
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<!-- Logo o nombre del sitio -->
+<a class="navbar-brand" href="#">
+<img alt="PequePlan" height="30" src="img/logo-pequeplan.svg.svg"/>
+</a>
+<!-- Botón para mostrar menú en mobile -->
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Ítems del menú -->
+<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
+<li class="nav-item"><a class="nav-link" href="#">PequeSwap</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- /NAVBAR -->
+<!-- HERO: Sección de portada con llamado a la acción -->
+<section class="hero-section d-flex align-items-center justify-content-between hero-crema">
+  <div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h1 class="hero-title">
+<span class="azul">Aprendé</span><br/>
+<span class="verde">jugando</span>
+</h1>
+<p class="p-custom"><strong>PequePlan</strong> es una caja sorpresa quincenal con actividades diseñadas para transformar sus tardes en aventuras en familia.</p>
+<div class="d-flex gap-3 mt-4">
+<a class="btn btn-dark" href="#">Saber más</a>
+</div>
+</div>
+<div class="col-lg-6 text-center">
+<img alt="Imagen Hero" class="img-fluid img-rounded" src="img/hero1.png"/>
+</div>
+</div>
+</section>
+<!-- /HERO -->
+<div class="wave-separator">
+<img alt="Separador de onda" class="img-fluid w-100" src="img/ondacelestehero.svg"/>
+</div>
+<!-- Sección de logos -->
+<section class="section-spacing container-fluid bg-white">
+<div class="container text-center">
+<div class="row justify-content-center align-items-center g-4">
+<div class="col-6 col-sm-4 col-md-2">
+<img alt="Skycolor" class="img-fluid grayscale-logo" src="img/Logos/epicgardening.svg"/>
+</div>
+<div class="col-6 col-sm-4 col-md-2">
+<img alt="Stadler" class="img-fluid grayscale-logo" src="img/Logos/exquisita.svg"/>
+</div>
+<div class="col-6 col-sm-4 col-md-2">
+<img alt="Exquisita" class="img-fluid grayscale-logo" src="img/Logos/Skycolor.svg"/>
+</div>
+<div class="col-6 col-sm-4 col-md-2">
+<img alt="Epic Gardening" class="img-fluid grayscale-logo" src="img/Logos/stadler.svg"/>
+</div>
+<div class="col-6 col-sm-4 col-md-2">
+<img alt="STEM Accredited" class="img-fluid grayscale-logo" src="img/Logos/steam org.svg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
+<section class="section-spacing bg-white">
+<div class="container">
+<div class="row align-items-center">
+<!-- Imagen -->
+<div class="col-lg-6 text-center mb-4 mb-lg-0">
+<img alt="Imagen ilustrativa" class="img-fluid img-rounded" src="img/Caja1.jpg"/>
+</div>
+<!-- Texto -->
+<div class="col-lg-6">
+<h2 class="display-5 h2-custom text-orange">¿Qué es PequePlan?</h2>
+<p class="lead-custom"><strong>PequePlan</strong> es una caja sorpresa quincenal con actividades diseñadas para transformar sus tardes en aventuras en familia. Recetas fáciles 
+        para cocinar juntos, Experimentos divertidos, Materiales seguros, Actividades creativas. </p>
+<a class="btn btn-primary mt-3" href="#">Saber más</a>
+</div>
+</div>
+</div>
+</section>
+<div class="wave-separator">
+<img alt="Separador de onda" class="img-fluid w-100" src="img/ondaverdearriba1.svg"/>
+</div>
+<!-- SECCIÓN E:como funciona -->
+<section class="bg-green-wave py-5 text-center">
+<div class="container">
+<div class="card card-funciona p-5">
+<h2 class="mb-5 text-uppercase fw-bold h2-custom">¿Cómo funciona?</h2>
+<div class="row">
+<div class="col-md-4 mb-4">
+<img alt="Imagen ilustrativa" class="img-fluid img-icon-funciona" src="img/plan.png"/>
+<h5>Elegí tu Plan</h5>
+<p class="p-custom">Vos decidís cuántas actividades querés por quincena.</p>
+</div>
+<div class="col-md-4 mb-4">
+<img alt="Imagen ilustrativa" class="img-fluid img-icon-funciona" src="img/CAJA.png"/>
+<h5>Recibí tu Peque Plan</h5>
+<p class="p-custom">Cada 15 días llega a tu casa una caja lista para usar.</p>
+</div>
+<div class="col-md-4 mb-4">
+<img alt="Imagen ilustrativa" class="img-fluid img-icon-funciona" src="img/pincel.png"/>
+<h5>Jugá, creá y compartí</h5>
+<p class="p-custom">Disfruten el momento juntos en familia.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="wave-separator">
+<img alt="Separador de onda" class="img-fluid w-100" src="img/ondaverdeabajo.svg"/>
+</div>
+<!-- PRICING: Tabla de precios o planes -->
+<!-- PRICING: Tabla de precios o planes -->
+<!-- /PRICING -->
+<!-- TEAM: Presentación del equipo -->
+<!-- TEAM: Presentación del equipo -->
+<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
+<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
+<div class="fondo-blanco"><section class="section-spacing container">
+<h2 class="h2-custom text-center archivo-black text-orange" style="; color: #ff5c1b !important;; color: #ff5c1b !important;">Elegí tu PequePlan</h2>
+<div class="row mt-5 justify-content-center">
+<div class="plan-card-uniforme">
+<img alt="Caja Verde" class="card-img-top pb-3" src="img/Cajas Planes/Caja Verde act.png" style="background-color: rgb(255, 255, 255); border-radius: 10px 10px 0 0;"/>
+<div class="card p-4 d-flex flex-column justify-content-between" style="background-color: #A4C520; border-radius: 20px; color: white; text-align: left; height: 100%;">
+<!-- Contenido principal -->
+<div>
+<h5 style="margin-bottom: 0.5rem;">Plan Básico</h5>
+<h2 class="fatfrank-text" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white;">Peque Chispa</h2>
+<div style="font-size: 0.9rem; border-left: 3px solid white; padding-left: 10px; margin-bottom: 1rem;">
+        Perfecto para comenzar a explorar
+      </div>
+<ul class="list-unstyled" style="font-size: 0.85rem; padding-left: 0;">
+<li><img src="img/Iconos/Check.svg" style="width: 16px; margin-right: 6px;"/>1 kit quincenal con materiales seguros</li>
+<li><img src="img/Iconos/Check.svg" style="width: 16px; margin-right: 6px;"/>Actividad Creativa</li>
+<li><img src="img/Iconos/Check.svg" style="width: 16px; margin-right: 6px;"/>Guía ilustrada para jugar</li>
+<li><img src="img/Iconos/Check.svg" style="width: 16px; margin-right: 6px;"/>Tips de juego para padres</li>
+</ul>
+</div>
+<!-- Precio y botón -->
+<div>
+<p class="fatfrank-text mt-3 mb-2" style="font-size: 1.6rem;; color: white">ARS 10.000</p>
+<a class="btn" href="plan-basico.html" style="background-color: #ff5c1b; color: white; font-weight: bold; border-radius: 20px; padding: 8px 16px;">Suscribirme</a>
+</div>
+</div>
+</div>
+<!-- PLAN AZUL COMPLETO -->
+<div class="plan-card-uniforme">
+<img alt="Caja Azul" class="card-img-top pb-3" src="img/Cajas Planes/Caja Azul act.png" style="background-color: rgb(255, 255, 255); border-radius: 10px 10px 0 0;"/>
+<div class="card p-4" style="background-color: #4ca1e0; border-radius: 20px; color: white; text-align: left; position: relative;">
+<h5 style="margin-bottom: 0.5rem;">Plan Estándar</h5>
+<h2 class="fatfrank-text" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white;">Peque Creador</h2>
+<div style="font-size: 0.9rem; border-left: 3px solid white; padding-left: 10px; margin-bottom: 1rem;">
+          Una dosis quincenal de creatividad
+        </div>
+<ul class="list-unstyled" style="font-size: 0.85rem; padding-left: 0;">
+<li><img src="img/Iconos/Check.svg" style="width: 16px; margin-right: 6px;"/>1 kit quincenal completo</li>
+<li><img src="img/Iconos/Check.svg" style="width: 16px; margin-right: 6px;"/>Materiales + receta/experimento</li>
+<li><img src="img/Iconos/Check.svg" style="width: 16px; margin-right: 6px;"/>Guía ilustrada para jugar</li>
+<li><img src="img/Iconos/Check.svg" style="width: 16px; margin-right: 6px;"/>Acceso a micro-videos con ideas extra</li>
+<li><img src="img/Iconos/Swap.svg" style="width: 16px; margin-right: 6px;"/><strong>Beneficio PequeSwap:</strong> cambiá kits usados por nuevos retos</li>
+<li><img src="img/Iconos/Descuento.svg" style="width: 16px; margin-right: 6px;"/><strong>10% de descuento</strong> en librerías y jugueterías educativas</li>
+</ul>
+<p class="fatfrank-text mt-3 mb-2" style="font-size: 1.6rem;; color: white">ARS 15.000</p>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<a class="btn" href="#" style="background-color: #ff5c1b; color: white; font-weight: bold; border-radius: 20px; padding: 8px 16px;">Suscribirme</a>
+<div style="display: flex; align-items: center;">
+<img alt="Estrella" src="img/Iconos/Más Popular.svg" style="width: 55px; margin-right: 5px;"/>
+</div>
+</div>
+</div>
+</div>
+<!-- PLAN NARANJA COMPLETO -->
+<div class="plan-card-uniforme">
+<img alt="Caja Naranja" class="card-img-top pb-3" src="img/Cajas Planes/Caja Naranja act.png" style="background-color: rgb(255, 255, 255); border-radius: 10px 10px 0 0;"/>
+<div class="card p-4" style="background-color: #F89337; border-radius: 20px; color: white; text-align: left; position: relative;">
+<h5 style="margin-bottom: 0.5rem;">Plan Estándar</h5>
+<h2 class="fatfrank-text" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white;">Peque Explorador</h2>
+<div style="font-size: 0.9rem; border-left: 3px solid white; padding-left: 10px; margin-bottom: 1rem;">
+          Creatividad sin límites + sorpresas
+        </div>
+<ul class="list-unstyled" style="font-size: 0.85rem; padding-left: 0;">
+<li><img src="img/Iconos/Check.svg" style="width: 16px; margin-right: 6px;"/>2 kits quincenales completos</li>
+<li><img src="img/Iconos/Check.svg" style="width: 16px; margin-right: 6px;"/>Materiales + receta/experimento</li>
+<li><img src="img/Iconos/Check.svg" style="width: 16px; margin-right: 6px;"/>Guía ilustrada para jugar</li>
+<li><img src="img/Iconos/Check.svg" style="width: 16px; margin-right: 6px;"/>Acceso a micro-videos con ideas extra</li>
+<li><img src="img/Iconos/Check.svg" style="width: 16px; margin-right: 6px;"/><strong>Regalo sorpresa</strong> cada mes</li>
+<li><img src="img/Iconos/Swap.svg" style="width: 16px; margin-right: 6px;"/><strong>Beneficio PequeSwap:</strong> cambiá kits usados por nuevos retos</li>
+<li><img src="img/Iconos/Descuento.svg" style="width: 16px; margin-right: 6px;"/><strong>10% de descuento</strong> en librerías y jugueterías educativas</li>
+</ul>
+<p class="fatfrank-text mt-3 mb-2" style="font-size: 1.6rem;; color: white">ARS 20.000</p>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<a class="btn" href="#" style="background-color: #ff5c1b; color: white; font-weight: bold; border-radius: 20px; padding: 8px 16px;">Suscribirme</a>
+</div>
+</div>
+</div>
+</div>
+</section><section class="section-spacing container text-center">
+<h2 class="h2-custom archivo-black text-orange text-center" style="; color: #ff5c1b !important;; color: #ff5c1b !important;">¿Por qué necesitas un Peque Plan?</h2>
+<div class="row justify-content-center mt-5">
+<div class="col-6 col-md-4 col-lg-2 mb-4">
+<img alt="Más conexión" class="rounded-circle team-icon mb-3" src="img/hojaplanta1.png"/>
+<p class="p-custom">Más conexión<br/>menos pantallas</p>
+</div>
+<div class="col-6 col-md-4 col-lg-2 mb-4">
+<img alt="Creatividad" class="rounded-circle team-icon mb-3" src="img/cerebro2.png"/>
+<p class="p-custom">Estimula la creatividad</p>
+</div>
+<div class="col-6 col-md-4 col-lg-2 mb-4">
+<img alt="Familia" class="rounded-circle team-icon mb-3" src="img/palma3.png"/>
+<p class="p-custom">Momentos en familia</p>
+</div>
+<div class="col-6 col-md-4 col-lg-2 mb-4">
+<img alt="Materiales" class="rounded-circle team-icon mb-3" src="img/paleta4.png"/>
+<p class="p-custom">Materiales seguros</p>
+</div>
+<div class="col-6 col-md-4 col-lg-2 mb-4">
+<img alt="Caja" class="rounded-circle team-icon mb-3" src="img/caja 5.png"/>
+<p class="p-custom">¡Abrir y jugar!</p>
+</div>
+</div>
+</section><section class="section-spacing container">
+<div class="row align-items-center">
+<!-- Columna de imagen -->
+<div class="col-lg-6 text-center mb-4 mb-lg-0">
+<img alt="Imagen ilustrativa" class="img-fluid img-rounded" src="img/Fotopadre1.png"/>
+</div>
+<!-- Columna de texto -->
+<div class="col-lg-6">
+<h2 class="display-5 h2-custom">
+<span class="FatFrank heavy">Menos tiempo en pantalla. <br/>Más tiempo creando recuerdos.</span>
+</h2>
+<p class="lead-custom">¡Un plan tan simple como abrir una caja y empezar a imaginar! </p>
+<a class="btn btn-primary mt-3" href="#">Quiero saber más</a>
+</div>
+</div>
+</section><section class="section-spacing container">
+<div class="row align-items-">
+<!-- Columna de texto -->
+<div class="col-lg-6">
+<h2 class="display-5 h2-custom">
+<span class="text-orange">Beneficio PequeSwap</span><br/>
+<span class="text-blue">Lo que ya jugaron…<br/>se transforma en más juego</span>
+</h2>
+<p class="lead-custom">PequePlan es una caja sorpresa quincenal con actividades diseñadas para transformar sus tardes en aventuras en familia. Recetas fáciles 
+para cocinar juntos, Experimentos divertidos, Materiales seguros, Actividades creativas. </p>
+<a class="btn btn-primary mt-3" href="#">Saber más</a>
+</div>
+<!-- Columna de imagen -->
+<div class="col-lg-6 text-center mb-4 mb-lg-0">
+<img alt="Imagen ilustrativa" class="img-fluid img-rounded" src="img/CAJAS SWAP.png"/>
+</div>
+</div>
+</section></div><div class="wave-separator">
+<img alt="Separador de onda" class="img-fluid" src="img/Bordes/Franja naranja arriba.svg"/>
+</div>
+<!-- SECCIÓN TESTIMONIOS -->
+<section class="bg-testimonios w-100">
+<div class="container">
+<h2 class="h2-custom text-center archivo-black text-orange">PequePlan en la vida real</h2>
+<div class="testimonials-grid">
+<div class="flip-card color1">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img alt="Avatar" src="img/Testimonios/NenaPanaderia.png"/>
+</div>
+<div class="flip-card-back">
+<p class="plan-label">| Plan Premium</p>
+<h5 class="fatfrank-text">Familia Pérez</h5>
+<p>"Nos ayudó dejar las pantallas y compartir en familia."</p>
+<p>- Mamá de Emma</p>
+</div>
+</div>
+</div>
+<div class="flip-card color2">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img alt="Avatar" src="img/Testimonios/NiñaPlanta.png"/>
+</div>
+<div class="flip-card-back">
+<p class="plan-label">| Plan Estándar</p>
+<h5 class="fatfrank-text">Familia Lopez</h5>
+<p>"Una actividad diferente cada vez. ¡Nos encanta!"</p>
+<p>- Mamá de Flor</p>
+</div>
+</div>
+</div>
+<div class="flip-card color3">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img alt="Avatar" src="img/Testimonios/Niñas Panaderia.png"/>
+</div>
+<div class="flip-card-back">
+<p class="plan-label">| Plan Básico</p>
+<h5 class="fatfrank-text">Familia Abdala</h5>
+<p>"Exploramos, aprendimos y nos reímos un montón."</p>
+<p>- Mamá de Luli y Sofi</p>
+</div>
+</div>
+</div>
+<div class="flip-card color1">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img alt="Avatar" src="img/Testimonios/Niñopanaderia.png"/>
+</div>
+<div class="flip-card-back">
+<p class="plan-label">| Plan Premium</p>
+<h5 class="fatfrank-text">Familia Pérez</h5>
+<p>"Ahora le da curiosidad y me ayuda a cocinar."</p>
+<p>- Mamá de Bauti</p>
+</div>
+</div>
+</div>
+<div class="flip-card color2">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img alt="Avatar" src="img/Testimonios/NiñOPlanta.png"/>
+</div>
+<div class="flip-card-back">
+<p class="plan-label">| Plan Estándar</p>
+<h5 class="fatfrank-text">Familia Gonzáles</h5>
+<p>"El kit de tipos de flores fue su favorito."</p>
+<p>- Papá de Bauti</p>
+</div>
+</div>
+</div>
+<div class="flip-card color3">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img alt="Avatar" src="img/Testimonios/BebePlanta.png"/>
+</div>
+<div class="flip-card-back">
+<p class="plan-label">| Plan Básico</p>
+<h5 class="fatfrank-text">Familia Cucurella</h5>
+<p>"Ve a ver cada día cómo su plantita crece."</p>
+<p>- Papá de Leo</p>
+</div>
+</div>
+</div>
+<div class="flip-card color1">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img alt="Avatar" src="img/Testimonios/Niña Cientifica.png"/>
+</div>
+<div class="flip-card-back">
+<p class="plan-label">| Plan Premium</p>
+<h5 class="fatfrank-text">Familia Alvarez</h5>
+<p>"Ahora quiere ser científica de grande."</p>
+<p>- Mamá de Alma</p>
+</div>
+</div>
+</div>
+<div class="flip-card color2">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img alt="Avatar" src="img/Testimonios/nena panaderaaa.png"/>
+</div>
+<div class="flip-card-back">
+<p class="plan-label">| Plan Estándar</p>
+<h5 class="fatfrank-text">Familia Castro</h5>
+<p>"Le encantó, quiere hacer galletas todo el tiempo."</p>
+<p>- Papá de Cami</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Onda decorativa de cierre -->
+<div class="wave-separator w-100">
+<img alt="Separador de onda" class="w-100" src="img/Bordes/Franja naranja abajo.svg" style="display: block;"/>
+</div>
+<!-- LO DEMAS-->
+<section style="background-color: #ffffff;">
+<div style="text-align: center; padding: 40px 20px;">
+<h2 class="fatfrank-text" style="color: #FF6600; font-size: 28px; font-family: 'FatFrank Heavy'; font-weight: normal;">
+      Preguntas frecuentes
+    </h2>
+<div class="faq-container">
+<div><button class="faq-btn">¿Qué incluye mi PequePlan?</button></div>
+<div><button class="faq-btn">¿Cómo me doy de baja?</button></div>
+<div><button class="faq-btn">¿Cuándo se envía mi caja?</button></div>
+<div><button class="faq-btn">¿Cómo gestiono mi suscripción?</button></div>
+<div><button class="faq-btn">¿Para cuántos niños es mi caja?</button></div>
+<div><button class="faq-btn">¿Qué pasa si hay un problema con mi pedido?</button></div>
+</div>
+</div>
+<div style="background-color: #FF6600; padding: 16px 20px; text-align: center; font-family: 'Quicksand';">
+<label style="color: white; font-weight: 500; margin-right: 12px;">
+      SUSCRIPCIÓN AL BOLETÍN INFORMATIVO:
+    </label>
+<input class="input-email" placeholder="Introduce tu correo electrónico" type="email"/>
+</div>
+<footer style="background-color: #4CB0E3; color: white; padding: 40px 20px; display: flex; flex-wrap: wrap; justify-content: space-around; font-family: 'Quicksand'; font-size: 14px;">
+<div style="max-width: 250px;">
+<h4 style="font-family: 'Quicksand'; font-weight: normal;">Acerca de</h4>
+<ul class="footer-list">
+        Nuestra misión es llevar alegría, creatividad y tiempo familiar de calidad a su hogar para evitar las pantallas
+      
+</ul></div>
+<div>
+<h4 style="font-family: 'Quicksand'; font-weight: normal;">Otros...</h4>
+<ul class="footer-list">
+<li>Consigue nuestra caja</li>
+<li>Almacenar</li>
+<li>Regala una caja</li>
+<li>Contacto</li>
+</ul>
+</div>
+<div>
+<h4 style="font-family: 'Quicksand'; font-weight: normal;">Mi cuenta</h4>
+<ul class="footer-list">
+<li>Blog</li>
+<li>Mi suscripción</li>
+<li>Condiciones de servicio</li>
+<li>Política de privacidad</li>
+<li>Política de reembolsos</li>
+<li>Política de suscripción</li>
+<li>Asóciate con nosotros</li>
+<li>Solicitud de educación/venta al por mayor</li>
+</ul>
+</div>
+<div>
+<h4 style="font-family: 'Quicksand'; font-weight: normal;">Síguenos</h4>
+<div class="social-icons">
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-tiktok"></i>
+<i class="fab fa-pinterest-p"></i>
+<i class="fab fa-youtube"></i>
+</div>
+</div>
+</footer>
+</section></body></html>
