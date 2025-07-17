@@ -851,3 +851,98 @@ footer {
   padding-bottom: 3rem; /* o ajustá según necesidad */
 }
 
+/* ========== RESPONSIVE PARA CELULAR Y TABLET ========== */
+@media (max-width: 768px) {
+  /* Ajustes generales */
+  section {
+    padding: 60px 20px;
+  }
+
+  h1, .h1-custom {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h2, .h2-custom {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .lead-custom {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .navbar .container {
+    padding: 0 15px;
+  }
+
+  .plan-card {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .plan-info {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .plan-img {
+    margin-top: 1.5rem;
+  }
+
+  .plan-img img {
+    max-width: 100%;
+  }
+
+  .wave-separator img {
+    height: auto;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .faq-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .input-email {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-list {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .plan-card-uniforme {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .plan-card-uniforme .card {
+    padding: 1.5rem;
+  }
+
+  .boton-plan {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-spacing {
+    padding: 60px 0;
+  }
+}
+
