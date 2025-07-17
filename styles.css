@@ -851,6 +851,7 @@ footer {
   padding-bottom: 3rem; /* o ajustá según necesidad */
 }
 
+
 /* ========== RESPONSIVE PARA CELULAR Y TABLET ========== */
 @media (max-width: 768px) {
   /* Ajustes generales */
@@ -944,5 +945,9 @@ footer {
   .section-spacing {
     padding: 60px 0;
   }
+}
+
+.fondo-blanco {
+  background-color: white;
 }
 
