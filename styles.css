@@ -1010,3 +1010,133 @@ footer {
   display: block;
   line-height: 0;
 }
+
+@media (max-width: 768px) {
+  /* Corrige el ancho del bloque de newsletter */
+  .newsletter-container,
+  .newsletter-input-wrapper,
+  .input-email {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  /* Ajusta el bloque naranja (newsletter) */
+  .newsletter-section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Asegura que el footer no se expanda más allá del viewport */
+  footer {
+    width: 100% !important;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+}
+ 
+@media (max-width: 768px) {
+  /* Corrige el ancho del bloque de newsletter */
+  .newsletter-container,
+  .newsletter-input-wrapper,
+  .input-email {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  /* Ajusta el bloque naranja (newsletter) */
+  .newsletter-section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Asegura que el footer no se expanda más allá del viewport */
+  footer {
+    width: 100% !important;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+}
+/* === AJUSTES RESPONSIVE GENERALES === */
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 16px;
+  }
+
+  section:not(.fondo-ondas):not(.wave-separator),
+  .section-spacing {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .plan-card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .plan-card-uniforme {
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card {
+    text-align: center;
+  }
+
+  .card ul {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .card .btn,
+  .boton-plan {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .plan-img {
+    text-align: center;
+  }
+
+  .plan-img img {
+    width: 90%;
+    height: auto;
+  }
+
+  .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 16px;
+  }
+
+  .container-fluid {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .plan-card-uniforme {
+    width: 100% !important;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
