@@ -23,7 +23,7 @@
 body {
   font-family: var(--font-family-base);
   color: #212529;
-  background-color: #fff9ef;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -951,3 +951,8 @@ footer {
   background-color: white;
 }
 
+
+
+.hero-crema {
+  background-color: #fff9ef;
+}
